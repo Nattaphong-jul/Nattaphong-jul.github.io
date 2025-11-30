@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Global styles shared across all pages -->
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body class="bg-slate-950 text-slate-50">
+    <!-- Navbar -->
+    <header
+      class="fixed inset-x-0 top-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur"
+    >
+      <nav class="page-container flex items-center justify-between py-3">
+        <!-- Logo / Brand -->
+        <a href="index.html" class="flex items-center gap-2">
+          <img 
+            src="images/NEO Horizon.jpg" 
+            alt="Logo"
+            class="h-8 w-8 rounded-xl object-cover"
+          />
+          <span class="text-lg font-semibold tracking-tight">
+            NEO <span class="text-sky-400">Horizon</span>
+          </span>
+        </a>
+
+        <!-- Nav links -->
+        <div class="hidden gap-6 md:flex">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="about.html" class="nav-link nav-link-active">About Me</a>
+        </div>
+
+        <!-- Mobile nav -->
+        <div class="md:hidden">
+          <select
+            class="rounded-lg bg-slate-900/90 px-3 py-1 text-sm text-slate-100 border border-slate-700"
+            onchange="if(this.value) location.href=this.value"
+          >
+            <option value="index.html">Home</option>
+            <option value="projects.html">Projects</option>
+            <option value="about.html" selected>About Me</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pt-24 pb-16">
+      <!-- Hero / Intro -->
+      <section class="border-b border-slate-800">
+        <div
+          class="page-container flex flex-col gap-10 py-10 lg:flex-row lg:items-center lg:justify-between"
+        >
+          <!-- Left: text + profile -->
+          <div class="space-y-6 max-w-xl">
+            <div class="flex items-center gap-4">
+              <!-- Circle profile photo -->
+              <!-- Replace src with your real profile image -->
+              <div class="h-16 w-16 rounded-full overflow-hidden border border-sky-400/70 shadow-lg">
+                <img
+                  src="images/myself.JPG"
+                  alt="Profile photo"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-300">
+                  About Me
+                </p>
+                <h1 class="section-title">
+                  Nattaphong Jullayakiat
+                </h1>
+              </div>
+            </div>
+
+            <!-- Short description / template text -->
+            <p class="text-sm sm:text-base text-slate-300">
+              I'm a developer student currently studying at 
+              <span class="text-sky-300">Faculty of ICT Mahidol University</span>
+              with a passion for game development.
+            </p>
+
+            <p class="text-sm sm:text-base text-slate-300">
+              I love seeing my friends happy while playing games I've created. 
+              Seeing others enjoy my work motivates me to keep improving my skills
+              and create even better experiences.
+            </p>
+
+            <!-- Tags / focus area -->
+            <div class="space-y-2">
+              <h2 class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-300">
+                Skills / Focus
+              </h2>
+              <div class="flex flex-wrap gap-2">
+                <span class="tag-chip">C</span>
+                <span class="tag-chip">Python</span>
+                <span class="tag-chip">HTML</span>
+                <span class="tag-chip">CSS</span>
+                <span class="tag-chip">Unreal Engine 5</span>
+                <span class="tag-chip">Blender</span>
+                <span class="tag-chip">Adobe Photoshop</span>
+                <span class="tag-chip">Adobe Illustrator</span>
+                <span class="tag-chip">Adobe Premiere Pro</span>
+                <span class="tag-chip">Fantasy Game</span>
+                <span class="tag-chip">Horror Game</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: small decorative image or mood art -->
+          <div class="w-full max-w-md">
+            <!-- Replace with an illustration / screenshot that matches your vibe -->
+            <div class="hero-image-wrapper">
+              <img
+                src="images/never_be_alone.jpg"
+                alt="One of my faviourite artwork"
+                class="hero-image"
+              />
+            </div>
+              <p class="text-xs p-2 sm:text-sm text-slate-400">
+                TheFatRat - Never Be Alone from <a class="text-sky-300" href="https://www.thefatrat.com/">TheFatRat Official</a>
+              </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Deep Dive: My passion & how I got into games -->
+            <!-- Deep Dive: My passion & how I got into games -->
+      <section class="bg-slate-950 py-12 lg:py-16">
+        <div class="page-container space-y-12">
+          <!-- Row 1: Text left, image right -->
+          <div class="grid gap-8 lg:grid-cols-2 lg:items-center">
+            <div class="space-y-6">
+              <h2 class="section-title">My journey into game development</h2>
+
+              <p class="text-sm sm:text-base text-slate-300">
+                In 2018, my favourite game at that time was Minecraft.
+                One day, my friend and I played a custom map for the first time.
+                It was a mini-game inside Minecraft, and we enjoyed it so much.
+                At that moment, I thought to myself, maybe I can create a game like this too.
+                So I started learning Command Block commands and the Redstone system, and I created many mini-games for my friends to play.
+              </p>
+
+              <p class="text-sm sm:text-base text-slate-300">
+                One of my favourite maps I made was a <span class="text-sky-300">"Find the Button"</span> map in 2019.
+                I loved seeing my friends' reactions when they found the hidden buttons in the weirdest spots ever.
+                It made me realize how much fun it is to create games that bring joy to others.
+                That was the beginning of my game development journey.
+              </p>
+            </div>
+
+            <div class="space-y-4">
+              <div class="hero-image-wrapper">
+                <!-- Replace with your first "story" image -->
+                <img
+                  src="images/minecraft_find_button.png"
+                  alt="Screenshots or artwork from my projects"
+                  class="hero-image"
+                />
+              </div>
+              <p class="text-xs sm:text-sm text-slate-400">
+                Find the Button - 2019
+              </p>
+            </div>
+          </div>
+
+          <!-- Row 2: Image left, text right -->
+          <div class="grid gap-8 lg:grid-cols-2 lg:items-center">
+            <div class="space-y-4">
+              <div class="hero-image-wrapper">
+                <!-- Replace with a second "future / dream" image -->
+                <img
+                  src="images/Close to the Sun.jpg"
+                  alt="Fantasy worlds and game ideas I want to create"
+                  class="hero-image"
+                />
+              </div>
+              <p class="text-xs sm:text-sm text-slate-400">
+                TheFatRat & Anjulie - Close To The Sun from <a class="text-sky-300" href="https://www.thefatrat.com/">TheFatRat Official</a>
+              </p>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="section-title">Where My Inspiration Began</h2>
+                <p class="text-sm sm:text-base text-slate-300">
+                  <span class="text-sky-300">TheFatRat</span>'s music plays a big role in my inspiration. In 2017, I first heard his music from YouTube gaming videos. 
+                  The electronic beats mixed with orchestral elements created an epic and adventurous atmosphere.
+                  The song I liked at the time was 
+                  <span class="text-sky-300">"Monody"</span>
+                  — the music felt completely different from anything I had heard before.
+                  The artwork was stunning, and I tried to look for lore behind the music but found nothing.
+                  So I kept listening more and more.
+                </p>
+
+                <p class="text-sm sm:text-base text-slate-300">
+                  Until one day in 2019, 
+                  <span class="text-sky-300">Close To The Sun</span>
+                  by 
+                  <span class="text-sky-300">TheFatRat & Anjulie</span>
+                  was released. It became the best music I had ever heard in my life.
+                  Beyond that, the artwork was gorgeous—every part of it felt like it was telling a story.
+                  At that moment, I wished there was a game set in a world like that. 
+                  But I found out nothing like it existed.
+                  And I started wondering, <span class="text-sky-300">what if I make a game in a world like that one day?</span>
+                </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800 bg-slate-950 py-6">
+      <div
+        class="page-container flex flex-col gap-2 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <span>
+          © <span id="year"></span> Nattaphong Jullayakiat. All rights reserved.
+        </span>
+
+        <span>Built with Tailwind CSS.</span>
+
+        <span>
+          <span class="hover:text-sky-300">nattapong.jullaya@gmail.com</span>
+        </span>
+      </div>
+    </footer>
+
+
+    <script>
+      document.getElementById("year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
