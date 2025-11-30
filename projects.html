@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Projects – Nattaphong Jullayakiat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Global styles shared across all pages -->
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body class="bg-slate-950 text-slate-50">
+    <!-- Navbar -->
+    <header
+      class="fixed inset-x-0 top-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur"
+    >
+      <nav class="page-container flex items-center justify-between py-3">
+        <!-- Logo / Brand -->
+        <a href="index.html" class="flex items-center gap-2">
+          <img 
+            src="images/NEO Horizon.jpg" 
+            alt="Logo"
+            class="h-8 w-8 rounded-xl object-cover"
+          />
+          <span class="text-lg font-semibold tracking-tight">
+            NEO <span class="text-sky-400">Horizon</span>
+          </span>
+        </a>
+
+        <!-- Nav links (file-based navigation) -->
+        <div class="hidden gap-6 md:flex">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="projects.html" class="nav-link nav-link-active">Projects</a>
+          <a href="about.html" class="nav-link">About Me</a>
+        </div>
+
+        <!-- Mobile nav -->
+        <div class="md:hidden">
+          <select
+            class="rounded-lg bg-slate-900/90 px-3 py-1 text-sm text-slate-100 border border-slate-700"
+            onchange="if(this.value) location.href=this.value"
+          >
+            <option value="projects.html" selected>Projects</option>
+            <option value="index.html">Home</option>
+            <option value="about.html">About Me</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pt-16 pb-16">
+      <!-- Projects Header / Intro -->
+      <section id="projects-header" class="border-b border-slate-800">
+        <div
+          class="page-container flex flex-col gap-8 py-10 lg:flex-row lg:items-end lg:justify-between"
+        >
+          <div class="space-y-4 max-w-2xl">
+            <h1 class="section-title">Projects</h1>
+            <p class="text-sm sm:text-base text-slate-300">
+              Here are the games and experiments I've been working on — from
+              horror vibes to the fantasy worlds I want to bring to life. Some
+              are small prototypes, some are bigger journeys, but each one is a
+              step toward the worlds I once dreamed of.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Grid -->
+      <section class="bg-slate-950 py-12 lg:py-24">
+        <div class="page-container space-y-8">
+          <!-- Optional small filter / label -->
+          <div class="flex items-center justify-between gap-4">
+            <p class="text-xs uppercase tracking-[0.25em] text-sky-300">
+              Featured game projects
+            </p>
+          </div>
+
+          <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+            <!-- Card 1 -->
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <img
+                  src="images/Feral_Project.jpg"
+                  alt="FERAL Project screenshot"
+                  class="project-image"
+                />
+              </div>
+              <div class="space-y-2">
+                <h2 class="project-title">FERAL Project</h2>
+                <p class="project-description">
+                  FERAL is a horror game about escaping monster,
+                  where you're forced to keep running
+                  through paths that procedurally generate.
+                </p>
+                <a href="projects/Feral.html" class="project-link">View details →</a>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <img
+                  src="images/OverDue_Project.jpg"
+                  alt="OverDue Project screenshot"
+                  class="project-image"
+                />
+              </div>
+              <div class="space-y-2">
+                <h2 class="project-title">OverDue Project</h2>
+                <p class="project-description">
+                  OverDue is a horror game that player must submit the work before deadline.
+                  You will play as a student in the university with final project worth 90% score.
+                </p>
+                <a href="#" class="project-link">Available Soon →</a>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <img
+                  src="images/KEEM_HBD_Project.jpg"
+                  alt="Keem HBD Project screenshot"
+                  class="project-image"
+                />
+              </div>
+              <div class="space-y-2">
+                <h2 class="project-title">Keem HBD Project</h2>
+                <p class="project-description">
+                  A small 2D game made as a birthday gift for a friend — with a
+                  playful ending that reveals a Steam Wallet surprise.
+                </p>
+                <a href="#" class="project-link">Available Soon →</a>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <img
+                  src="images/Arcadia_Project.jpg"
+                  alt="Arcadia Project screenshot"
+                  class="project-image"
+                />
+              </div>
+              <div class="space-y-2">
+                <h2 class="project-title">Arcadia Project</h2>
+                <p class="project-description">
+                  A passion project aiming to create a true fantasy world —
+                  still in early stages, but it represents the direction I want
+                  my future games to go.
+                </p>
+                <a href="#" class="project-link">Available Soon →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="border-t border-slate-800 bg-slate-950 py-6"
+    >
+      <div
+        class="page-container flex flex-col gap-2 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <span
+          >© <span id="year"></span> Nattaphong Jullayakiat. All rights
+          reserved.</span
+        >
+        <span>Built with Tailwind CSS.</span>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
