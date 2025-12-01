@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FERAL Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../global.css" />
+  </head>
+
+  <body class="bg-slate-950 text-slate-50">
+    <!-- Navbar (same as About page) -->
+    <header
+      class="fixed inset-x-0 top-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur"
+    >
+      <nav class="page-container flex items-center justify-between py-3">
+        <!-- Logo / Brand -->
+        <a href="../index.html" class="flex items-center gap-2">
+          <img
+            src="../images/NEO Horizon.jpg"
+            alt="Logo"
+            class="h-8 w-8 rounded-xl object-cover"
+          />
+          <span class="text-lg font-semibold tracking-tight">
+            NEO <span class="text-sky-400">Horizon</span>
+          </span>
+        </a>
+
+        <!-- Desktop nav -->
+        <div class="hidden gap-6 md:flex">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="../projects.html" class="nav-link">Projects</a>
+          <a href="../about.html" class="nav-link">About Me</a>
+        </div>
+
+        <!-- Mobile nav -->
+        <div class="md:hidden">
+          <select
+            class="rounded-lg bg-slate-900/90 px-3 py-1 text-sm text-slate-100 border border-slate-700"
+            onchange="if(this.value) location.href=this.value"
+          >
+            <option value="../index.html">Home</option>
+            <option value="../projects.html">Projects</option>
+            <option value="../about.html">About Me</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pt-12">
+      <!-- Hero -->
+      <section class="hero-section project-hero-section">
+        <div class="page-container">
+          <div class="hero-image-wrapper project-hero-wrapper">
+            <img
+              src="../images/FERAL/Feral Full Image.jpg"
+              alt="Feral Project Hero Image"
+              class="hero-image project-hero-image"
+            />
+
+            <div class="project-hero-overlay">
+              <p class="project-hero-kicker">
+                Horror Game · Procedural Generation Escape
+              </p>
+              <h1 class="project-hero-title">FERAL Project</h1>
+              <p class="project-hero-description">
+                This is a horror game project built around the idea of running to survive. 
+                Each escape route is procedurally generated, ensuring a different pathway every time you play.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Story -->
+      <section class="story-section">
+        <div class="page-container story-stack">
+          <!-- Block 1 -->
+          <article class="story-row">
+            <div class="story-text">
+              <h2 class="story-heading">How the idea started</h2>
+              <p class="story-body">
+                This project began when my friends and I decided to create a game together, 
+                and we chose the horror genre. Our inspiration came from one of our favourite games, 
+                <span class="text-sky-300">"Backrooms: Escape Together"</span>. 
+                In that game, there is a stage where players must run and find a way out while being chased by a creature. 
+                We loved the tension and pressure of that moment, so we decided to create our own take on the concept—with our own twist.
+              </p>
+            </div>
+
+            <div class="story-image-container">
+              <div class="story-image-frame">
+                <img
+                  src="../images/FERAL/InsideView.png"
+                  alt="FERAL — Lab Chamber"
+                  class="story-image"
+                />
+              </div>
+              <p class="story-caption">FERAL — The Corridors</p>
+            </div>
+          </article>
+
+          <!-- Block 2 -->
+          <article class="story-row story-row--reverse">
+            <div class="story-image-container">
+              <div class="story-image-frame">
+                <img
+                  src="../images/FERAL/Locked Door.png"
+                  alt="FERAL — Locked Door"
+                  class="story-image"
+                />
+              </div>
+              <p class="story-caption">FERAL — Locked Door</p>
+            </div>
+
+            <div class="story-text">
+              <h2 class="story-heading">Game Story Background</h2>
+              <p class="story-body">
+                You are a <span class="text-sky-300">scientist</span> working on a secret project 
+                involving a <span class="text-sky-300">dangerous creature</span> in a hidden laboratory. 
+                One day, you hear strange noises coming from the main chamber. When you go to investigate, 
+                you discover that the creature the lab had been experimenting on has escaped and is 
+                <span class="text-sky-300">nowhere to be found.</span>
+                The entire facility is silent and empty—
+                <span class="text-sky-300">except for you.</span>
+              </p>
+
+              <p class="story-body">
+                You decide to escape… but suddenly, the door behind you—one that was locked—slams violently, 
+                as if <span class="text-sky-300">something massive</span> is trying to break through. 
+                You then notice something horrifying: structures resembling tree roots, but made of flesh and blood, 
+                are spreading across the facility—crawling along the floors and climbing across the ceiling. 
+                You sprint through the corridors, desperately searching for an exit before the door gives way 
+                and the creature catches up to you.
+              </p>
+            </div>
+          </article>
+
+          <!-- Block 3 -->
+          <article class="story-row">
+            <div class="story-text">
+              <h2 class="story-heading">Game Mechanics</h2>
+
+              <p class="story-body">
+                The core gameplay mechanic of FERAL is 
+                <span class="text-sky-300">running to escape</span> while navigating through 
+                <span class="text-sky-300">procedurally generated pathways</span>. 
+                Each time you play, the layout of the corridors changes, creating a 
+                <span class="text-sky-300">unique experience</span> with every run.
+              </p>
+
+              <p class="story-body">
+                Throughout the pathways, there are 
+                <span class="text-sky-300">items</span> and 
+                <span class="text-sky-300">structures</span> that the player can use to 
+                <span class="text-sky-300">slow down the creature</span>. 
+                The <span class="text-sky-300">creature</span> cannot be killed or permanently avoided, 
+                so the player must keep <span class="text-sky-300">running</span> and making 
+                <span class="text-sky-300">quick decisions</span> to survive until they reach the 
+                <span class="text-sky-300">Safe Room</span>.
+              </p>
+            </div>
+
+            <div class="story-image-container">
+              <div class="story-image-frame">
+                <img
+                  src="../images/FERAL/Feral Generation.gif"
+                  alt="FERAL — Path Generation"
+                  class="story-image"
+                />
+              </div>
+              <p class="story-caption">Procedural Generation Path — Top View</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-6">
+      <div
+        class="page-container flex flex-col gap-2 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <span>
+          © <span id="year"></span> Nattaphong Jullayakiat. All rights reserved.
+        </span>
+
+        <span>Built with Tailwind CSS.</span>
+
+        <span>
+          <span class="hover:text-sky-300">nattapong.jullaya@gmail.com</span>
+        </span>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
