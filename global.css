@@ -161,11 +161,6 @@ body {
 .hero-image-wrapper {
   border-radius: 1.5rem;
   padding: 0.25rem;
-  background: radial-gradient(
-    circle at top right,
-    rgba(56, 189, 248, 0.5),
-    transparent 60%
-  );
   box-shadow:
     0 0 0 1px rgba(148, 163, 184, 0.4),
     0 30px 60px rgba(15, 23, 42, 0.9);
