@@ -174,10 +174,11 @@ body {
 .hero-image {
   width: 100%;
   height: auto;
-  max-height: 480px;   /* increased from ~420px */
+  max-height: 480px;
   object-fit: cover;
   border-radius: 1.25rem;
 }
+
 
 /* ------------------------------------------------------
    Project Cards
@@ -274,7 +275,11 @@ body {
 
 .project-hero-wrapper {
   position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  border: 2px solid rgba(148, 163, 184, 0.25);
 }
+
 
 .project-hero-image {
   width: 100%;
